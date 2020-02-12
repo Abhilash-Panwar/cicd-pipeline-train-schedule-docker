@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("maverick/train-schedule")
+                    app = docker.build("maverick11/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
